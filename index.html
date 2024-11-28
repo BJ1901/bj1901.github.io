@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width = device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <div id="myBtnContainer" style="
+        width: 500px;
+        position: relative;
+        left: 15px;
+        top: 70px;">
+            <button class="btn" onclick="filterSelection('background')"> Background</button>
+            <button class="btn" onclick="filterSelection('objbody')"> Base</button>
+            <button class="btn" onclick="filterSelection('obj2')"> Mouth</button>
+            <button class="btn" onclick="filterSelection('obj3')"> Eyes</button>
+            <button class="btn" onclick="filterSelection('obj4')"> Brows</button>
+            <button class="btn" onclick="filterSelection('obj5')"> Shoes</button>
+            <button class="btn" onclick="filterSelection('obj6')"> Ponytails</button>
+            <button class="btn" onclick="filterSelection('obj7')"> Wig</button>
+            <button class="btn" onclick="filterSelection('obj8')"> SkirtsPants</button>
+            <button class="btn" onclick="filterSelection('obj9')"> Tops</button>
+            <button class="btn" onclick="filterSelection('obj10')"> Bags</button>
+            <button class="btn" onclick="filterSelection('obj11')"> Hats</button>
+            <button class="btn" onclick="filterSelection('obj12')"> Jewelry</button>
+          </div>
+        <div class="container">
+        <div class="filterDiv background" onclick="pickImage(1)"><img src="img/background (1).png" alt="bg1" style="width: 120px ; height: 120px;" />
+        <div id="myDropdown 1" class="dropdown-content 1">
+            <button href="#" style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+            <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+            <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+            <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+            <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+            <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+          </div>
+        </div>
+        <div class="filterDiv background" onclick="pickImage(2)"><img src="img/background (2).png" alt="bg2" style="width: 120px ; height: 120px;">
+            <div id="myDropdown 2" class="dropdown-content 2">
+                <button href="#" style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+                <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+                <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+                <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+                <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+                <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+              </div>
+            </div>
+        <div class="filterDiv background" onclick="pickImage(3)"><img src="img/background (3).png" alt="bg3" style="width: 120px ; height: 120px;">
+            <div id="myDropdown 3" class="dropdown-content 3">
+                <button href="#" style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+                <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+                <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+                <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+                <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+                <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+              </div>
+            </div>
+        <div class="filterDiv background" onclick="pickImage(4)"><img src="img/background (4).png" alt="bg4" style="width: 120px ; height: 120px;">
+            <div id="myDropdown 4" class="dropdown-content 4">
+                <button style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+                <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+                <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+                <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+                <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+                <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+              </div>
+            </div>
+        <div class="filterDiv background" onclick="pickImage(5)"><img src="img/background (5).png" alt="bg5" style="width: 120px ; height: 120px;">
+            <div id="myDropdown 5" class="dropdown-content 5">
+                <button href="#" style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+                <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+                <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+                <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+                <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+                <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+              </div>
+            </div>
+        <div class="filterDiv background" onclick="pickImage(6)"><img src="img/background (6).png" alt="bg6" style="width: 120px ; height: 120px;">
+            <div id="myDropdown 6" class="dropdown-content 6">
+                <button href="#" style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+                <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+                <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+                <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+                <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+                <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+              </div>
+            </div>
+        <div class="filterDiv background" onclick="pickImage(7)"><img src="img/background (7).png" alt="bg7" style="width: 120px ; height: 120px;">
+            <div id="myDropdown 7" class="dropdown-content 7">
+                <button href="#" style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+                <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+                <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+                <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+                <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+                <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+              </div>
+            </div>
+        <div class="filterDiv background" onclick="pickImage(8)"><img src="img/background (8).png" alt="bg8" style="width: 120px ; height: 120px;">
+            <div id="myDropdown 8" class="dropdown-content 8">
+                <button href="#" style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+                <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+                <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+                <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+                <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+                <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+              </div>
+            </div>
+        <div class="filterDiv background" onclick="pickImage(9)"><img src="img/background (9).png" alt="bg9" style="width: 120px ; height: 120px;">
+            <div id="myDropdown 9" class="dropdown-content 9">
+                <button href="#" style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+                <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+                <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+                <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+                <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+                <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+              </div>
+            </div>
+        <div class="filterDiv background" onclick="pickImage(10)"><img src="img/background (10).png" alt="bg10" style="width: 120px ; height: 120px;">
+            <div id="myDropdown 10" class="dropdown-content 10">
+                <button href="#" style="background-color:rgb(255, 2, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(1)"></button>
+                <button style="background-color:rgb(255, 209, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(2)"></button>
+                <button style="background-color:rgb(32, 255, 2);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(3)"></button>
+                <button style="background-color:rgb(2, 238, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(4)"></button>
+                <button style="background-color:rgb(2, 48, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(5)"></button>
+                <button style="background-color:rgb(154, 2, 255);width: 20px ; height: 20px;border-radius: 50%;border: none;" onclick="pickCircle(6)"></button>
+              </div>
+            </div>
+        <div class="filterDiv objbody" onclick="pickObj('body',1)"><img src="img/objbody (1).png" alt="obj1" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj2" onclick="pickObj(2,1)"><img src="img/obj2 (1).png" alt="obj2" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj2" onclick="pickObj(2,2)"><img src="img/obj2 (2).png" alt="obj2" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj2" onclick="pickObj(2,3)"><img src="img/obj2 (3).png" alt="obj2" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj2" onclick="pickObj(2,4)"><img src="img/obj2 (4).png" alt="obj2" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj2" onclick="pickObj(2,5)"><img src="img/obj2 (5).png" alt="obj2" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj3" onclick="pickObj(3,1)"><img src="img/obj3 (1).png" alt="obj3" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj3" onclick="pickObj(3,2)"><img src="img/obj3 (2).png" alt="obj3" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj3" onclick="pickObj(3,3)"><img src="img/obj3 (3).png" alt="obj3" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj3" onclick="pickObj(3,4)"><img src="img/obj3 (4).png" alt="obj3" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj3" onclick="pickObj(3,5)"><img src="img/obj3 (5).png" alt="obj3" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj4" onclick="pickObj(4,1)"><img src="img/obj4 (1).png" alt="obj4" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj4" onclick="pickObj(4,2)"><img src="img/obj4 (2).png" alt="obj4" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj4" onclick="pickObj(4,3)"><img src="img/obj4 (3).png" alt="obj4" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj4" onclick="pickObj(4,4)"><img src="img/obj4 (4).png" alt="obj4" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj5" onclick="pickObj(5,1)"><img src="img/obj5 (1).png" alt="obj5" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj5" onclick="pickObj(5,2)"><img src="img/obj5 (2).png" alt="obj5" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj5" onclick="pickObj(5,3)"><img src="img/obj5 (3).png" alt="obj5" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj5" onclick="pickObj(5,4)"><img src="img/obj5 (4).png" alt="obj5" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj5" onclick="pickObj(5,5)"><img src="img/obj5 (5).png" alt="obj5" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj6" onclick="pickObj(6,1)"><img src="img/obj6 (1).png" alt="obj6" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj6" onclick="pickObj(6,2)"><img src="img/obj6 (2).png" alt="obj6" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj6" onclick="pickObj(6,3)"><img src="img/obj6 (3).png" alt="obj6" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj7" onclick="pickObj(7,1)"><img src="img/obj7 (1).png" alt="obj7" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj7" onclick="pickObj(7,2)"><img src="img/obj7 (2).png" alt="obj7" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj7" onclick="pickObj(7,3)"><img src="img/obj7 (3).png" alt="obj7" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj7" onclick="pickObj(7,4)"><img src="img/obj7 (4).png" alt="obj7" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj7" onclick="pickObj(7,5)"><img src="img/obj7 (5).png" alt="obj7" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj7" onclick="pickObj(7,6)"><img src="img/obj7 (6).png" alt="obj7" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,1)"><img src="img/obj8 (1).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,2)"><img src="img/obj8 (2).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,3)"><img src="img/obj8 (3).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,4)"><img src="img/obj8 (4).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,5)"><img src="img/obj8 (5).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,6)"><img src="img/obj8 (6).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,7)"><img src="img/obj8 (7).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,8)"><img src="img/obj8 (8).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,9)"><img src="img/obj8 (9).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,10)"><img src="img/obj8 (10).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,11)"><img src="img/obj8 (11).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,12)"><img src="img/obj8 (12).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj8" onclick="pickObj(8,13)"><img src="img/obj8 (13).png" alt="obj8" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,1)"><img src="img/obj9 (1).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,2)"><img src="img/obj9 (2).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,3)"><img src="img/obj9 (3).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,4)"><img src="img/obj9 (4).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,5)"><img src="img/obj9 (5).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,6)"><img src="img/obj9 (6).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,7)"><img src="img/obj9 (7).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,8)"><img src="img/obj9 (8).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,9)"><img src="img/obj9 (9).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj9" onclick="pickObj(9,10)"><img src="img/obj9 (10).png" alt="obj9" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj10" onclick="pickObj(10,1)"><img src="img/obj10 (1).png" alt="obj10" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj10" onclick="pickObj(10,2)"><img src="img/obj10 (2).png" alt="obj10" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj10" onclick="pickObj(10,3)"><img src="img/obj10 (3).png" alt="obj10" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj10" onclick="pickObj(10,4)"><img src="img/obj10 (4).png" alt="obj10" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj10" onclick="pickObj(10,5)"><img src="img/obj10 (5).png" alt="obj10" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj10" onclick="pickObj(10,6)"><img src="img/obj10 (6).png" alt="obj10" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj11" onclick="pickObj(11,1)"><img src="img/obj11 (1).png" alt="obj10" style="width: 120px ; height: 120px;">
+            </div>
+            <div class="filterDiv obj11" onclick="pickObj(11,2)"><img src="img/obj11 (2).png" alt="obj10" style="width: 120px ; height: 120px;">
+            </div>
+        </div>
+
+    <div class="resultBox" style="
+        height: 375px;
+        width: 375px;
+        position: relative;
+        left: 578px;
+        top: -380px;
+        background-size: 100% auto;">
+            <div id="resultBox bckgr" style="
+            height: 375px;
+            width: 375px;
+            position: absolute;
+            top: 0px;
+            background-image: none;">
+            </div>
+            <div id="resultBox circle" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox objbody" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj2" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj3" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj4" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj5" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj6" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj7" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj8" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj9" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj10" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+            <div id="resultBox obj11" style="
+            height: 375px;
+            width: 375px;
+            top: 0px;
+            position: absolute;
+            background-image: none;">
+            </div>
+        </div>
+    </div>
+        <script>
+
+           
+        </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

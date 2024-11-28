@@ -1,0 +1,75 @@
+.game {
+    width: 1000px;
+    height: 750px;
+    background-image: url("img/interface.png");
+    background-color: #ffffff;
+    background-size: 100% auto;
+    margin : auto;
+}
+.list {
+    width: 100px;
+}
+.myBtnContainer {
+    width: 500px;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+    position: relative;
+    top: 100px;
+    left: 15px;
+  }
+  .resultBox {
+    display:block;
+    background-color: #272727;
+  }
+  .filterDiv {
+    float: left;
+    background-color: #ffffff;
+    background-size: 100% auto;
+    color: #ffffff;
+    width: 120px;
+    height: 120px;
+    line-height: 0px;
+    text-align: auto;
+    margin: 2px;
+    display: none; /* Hidden by default */
+  }
+  
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  min-width: 50px;
+  height: auto;
+  z-index: 1;
+}
+
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  .bg1 {
+    background-image: url("img/background\ \(1\).png");
+  }
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
