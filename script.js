@@ -1,4 +1,9 @@
+
+
+
+
 filterSelection("all")
+
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -19,6 +24,21 @@ function filterSelection(c) {
 // }
 
 // Show filtered elements
+setInterval( () => {
+//   console.log('зыыыырь');
+//   // let winHeight = $(window).height();     // высота окна
+//   // let winWidth = $(window).width();     // ширина окна
+//   let winHeight = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+//   // let divHeight = $('.game').height();  // высота блока
+//   // let divHeight = document.getElementById('game').clientHeight;
+// var divh = document.querySelector('.game').clientHeight;
+//   let ratio = winHeight / 10000 ;    // отношение между ними
+//   console.log(ratio);
+//   document.querySelector('.game').style.transform = `scale(${ratio})`;
+ 
+
+}, 200);
+
 function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -29,7 +49,6 @@ function w3AddClass(element, name) {
     }
   }
 }
-
 // Hide elements that are not selected
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
@@ -56,42 +75,47 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-function pickImage(index) {
 
-  let headingID = document.getElementById("resultBox bckgr");
-  headingID.style.backgroundImage = `url('img/background (${index}).png')`;
-  headingID.style.backgroundSize = "contain";
-  var dropdowns = document.getElementsByClassName("dropdown-content");
-  for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-      }
-  }
-  document.getElementById(`myDropdown ${index}`).classList.toggle("show"); 
-  
-  
-  
-}
-function pickCircle(indexColor) {
-  let headingID = document.getElementById("resultBox circle");
-  headingID.style.backgroundImage = `url('img/circle (${indexColor}).png')`;
-  headingID.style.backgroundSize = "contain";
-}
+function pickImageWithoutStyle(index, boxType) {
 
-function pickObj(obj,index) {
-headingID = document.getElementById(`resultBox obj${obj}`);
+  let headingID = document.getElementById(`resultBox ${boxType}`);
+
+  headingID.style.backgroundImage = `url('img/${boxType} (${index}).png')`;
+  headingID.style.backgroundSize = "contain";
+ }
+
+function pickObj(obj,index, hasMenu = false) {
+
+if(obj == 12){ removeObject(9); removeObject(8);}
+if(obj == 9){ removeObject(12);}
+if(obj == 8){ removeObject(12);}
+
+if(hasMenu == false) {
+  headingID = document.getElementById(`resultBox obj${obj}`);
 headingID.style.backgroundImage =  `url('img/obj${obj} (${index}).png')`;
 headingID.style.backgroundSize = "contain";
+}
+else{
+  const dropdowns = document.getElementById(`styleMenu ${obj}_${index}`);
+Array.from(dropdowns).forEach((dropdown) => {
+    if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+    }
+});
+document.getElementById(`styleMenu ${obj}_${index}`).classList.toggle("show");
+}
+}
 
-// const dropdowns = document.getElementsByClassName("dropdown-content");
-// Array.from(dropdowns).forEach((dropdown) => {
-//     if (dropdown.classList.contains('show')) {
-//         dropdown.classList.remove('show');
-//     }
-// });
-
-// document.getElementById(`myDropdown ${index}`).classList.toggle("show");
+function pickStyledObj(obj,index,style) {
+    headingID = document.getElementById(`resultBox obj${obj}`);
+  headingID.style.backgroundImage =  `url('img/styles/obj${obj} (${style})(${index}).png')`;
+  headingID.style.backgroundSize = "contain";
+  const dropdowns = document.getElementById(`styleMenu ${obj}_${index}`);
+  Array.from(dropdowns).forEach((dropdown) => {
+      if (dropdown.classList.contains('show')) {
+          dropdown.classList.remove('show');
+      }
+  });
 }
 window.onclick = function(event) {
 console.log(event.target.alt);         
@@ -110,4 +134,10 @@ else if(event.target )
 {
 
 }
+}
+function removeObject(obj)
+{
+  headingID = document.getElementById(`resultBox obj${obj}`);
+  headingID.style.backgroundImage =  "";
+  headingID.style.backgroundSize = "";
 }
