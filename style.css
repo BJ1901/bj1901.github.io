@@ -9,6 +9,8 @@ html, body {
   align-items: center;
   justify-content: center;
   background-color: rgb(24, 24, 24);
+  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-zoom: touch;
 }
 
 .window {
