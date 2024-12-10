@@ -1,7 +1,7 @@
 
 body {
-  width: 119vh;
-  height: 1000px;
+  width: 100%;
+  height: 100%;
   margin: auto;
   padding: 0;
   overflow: hidden;
@@ -15,30 +15,20 @@ body {
 
 }
 
-.window {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: relative;
-  overflow: auto;   
-}
-
-.game {
-  
-    /* width: 1000px;
-    height: 750px; */
-    position: absolute;
-    top: 0;
+.menu {
+  width: 48vh;
+  height: 60vh;
+  position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  overflow: hidden;
+  background-image: url("img/menu.png");
+    /* top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    margin: auto;
-    width: 116vh;
-    height: 87vh;
-    cursor: url("img/cursor.png") 2 2, default;
-    background-image: url("img/interface.png");
-    background-color: #ffffff;
+    margin: auto; */
     background-size: 100% auto;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -46,7 +36,64 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin :auto;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+
+
+}
+.menucontent{
+  width: 20.7vh;
+  height: 46vh;
+  position: relative;
+  top: 9vh;
+  left: 13.0vh;
+}
+
+.btnmenu {
+  width: 21vh;
+  height: 10vh;
+  margin-bottom: 1.6vh;
+  top: 0;
+  left: 0;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.window {
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: center;
+}
+
+.game {
+  
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100vh;
+  height: 75vh;
+  cursor: url(img/cursor.png) 2 2, default;
+  background-image: url(img/interface.png);
+  background-color: #ffffff;
+  background-size: 100% auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-left: auto;
+  margin-right: auto;
     
     
 }
@@ -66,16 +113,22 @@ body {
     width: 500px;
 }
 .container {
-  width: 58vh;
-  height: 61vh;
-  overflow: auto;
-  position: absolute;
-  top: 18vh;
-  left: 1.7vh;
+  display: grid;
+  width: 47vh;
+    height: 53vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 15vh;
+    left: 2.7vh;
+    justify-content: center;
+    grid-column-end: 3;
+    grid-template-columns: repeat(3, 15vh);
   }
   .resultBox {
     display:block;
     background-color: #272727;
+    
   }
   .filterDiv {
     float: left;
@@ -137,18 +190,21 @@ transform: scale(1.3);
 }
 .dropdown-content 
 {
+  display: grid;
   display: none;
-  background-color: #ffffff;
-  width: 57vh;
-  height: 56vh;
-  top : 0vh;
-  left: 0vh;
-  overflow: auto;
-  position: absolute;
-  background-image: url("img/styleBox.png");
-  background-size: 100% auto;
-  
-  z-index: 1;
+    background-color: #ffffff;
+    width: 46.5vh;
+    height: 46.1vh;
+    top: 15vh;
+    left: 1vh;
+    overflow: hidden;
+    position: fixed;
+    background-image: url(img/styleBox.png);
+    background-size: contain;
+    justify-content: center;
+    grid-column-end: 3;
+    grid-template-columns: repeat(3, 15vh);
+    z-index: 1;
 }
 .style {
   float: left;
@@ -175,6 +231,7 @@ transform: scale(1.3);
     padding: 0.9vh 0.5vh;
     background-color: #ffffff;
     cursor: pointer;
+    
   }
   
   /* Add a light grey background on mouse-over */
@@ -186,4 +243,19 @@ transform: scale(1.3);
   .btn.active {
     background-color: #666;
     color: white;
+  }
+  .gifka {
+    height: 10vh;
+    width: auto;
+    background-image: url(img/gifka.gif);
+    background-size: contain;
+  }
+  .mintBtn {
+    background-image: url(img/mint.png);
+    background-size: cover;
+    position: absolute;
+    left: 52vh;
+    top: 86vh;
+    height: 15vh;
+    width: 48vh;
   }

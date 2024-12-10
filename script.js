@@ -125,8 +125,8 @@ var dropdowns = document.getElementsByClassName("dropdown-content");
 var i;
 for (i = 0; i < dropdowns.length; i++) {
 var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('show')) {
-openDropdown.classList.remove('show');
+if (openDropdown.classList.contains('grid')) {
+openDropdown.classList.remove('grid');
 }
 }
 }
@@ -140,4 +140,9 @@ function removeObject(obj)
   headingID = document.getElementById(`resultBox obj${obj}`);
   headingID.style.backgroundImage =  "";
   headingID.style.backgroundSize = "";
+}
+
+function mint()
+{
+  
 }
