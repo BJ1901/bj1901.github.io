@@ -29,7 +29,8 @@
             <button class="btn" onclick="filterSelection('obj5')">shoes</button>
             <button class="btn" onclick="filterSelection('obj6')">ponytails</button>
             <button class="btn" onclick="filterSelection('obj7')">hair</button>
-            <button class="btn" onclick="filterSelection('obj8')">skirts and pants</button>
+            <button class="btn" onclick="filterSelection('obj8')">skirts</button>
+            <button class="btn" onclick="filterSelection('obj14')">pants</button>
             <button class="btn" onclick="filterSelection('obj9')">tops</button>
             <button class="btn" onclick="filterSelection('obj10')">bags</button>
             <button class="btn" onclick="filterSelection('obj11')">hats</button>
@@ -71,13 +72,35 @@
           </div>
           <div class="filterDiv background" onclick="pickImageWithoutStyle(15, 'background')"><img src="img/background (15).png" alt="bg15" style="width: 14vh ; height: 14vh;">
           </div>
-          <div class="filterDiv texture" onclick="pickImageWithoutStyle(1, 'texture')"><img src="img/texture (1).png" alt="txtr1" style="width: 14vh ; height: 14vh;">
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(1, 'textures')"><img src="img/textures (1).png" alt="txtr1" style="width: 14vh ; height: 14vh;">
           </div>
-          <div class="filterDiv texture" onclick="pickImageWithoutStyle(2, 'texture')"><img src="img/texture (2).png" alt="txtr2" style="width: 14vh ; height: 14vh;">
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(2, 'textures')"><img src="img/textures (2).png" alt="txtr2" style="width: 14vh ; height: 14vh;">
           </div>
-          <div class="filterDiv texture" onclick="pickImageWithoutStyle(3, 'texture')"><img src="img/texture (3).png" alt="txtr3" style="width: 14vh ; height: 14vh;">
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(3, 'textures')"><img src="img/textures (3).png" alt="txtr3" style="width: 14vh ; height: 14vh;">
           </div>
-          <div class="filterDiv texture" onclick="pickImageWithoutStyle(4, 'texture')"><img src="img/texture (4).png" alt="txtr4" style="width: 14vh ; height: 14vh;">
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(4, 'textures')"><img src="img/textures (4).png" alt="txtr4" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(5, 'textures')"><img src="img/textures (5).png" alt="txtr5" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(6, 'textures')"><img src="img/textures (6).png" alt="txtr6" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(7, 'textures')"><img src="img/textures (7).png" alt="txtr7" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(8, 'textures')"><img src="img/textures (8).png" alt="txtr8" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(9, 'textures')"><img src="img/textures (9).png" alt="txtr9" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(10, 'textures')"><img src="img/textures (10).png" alt="txtr10" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(11, 'textures')"><img src="img/textures (11).png" alt="txtr11" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(12, 'textures')"><img src="img/textures (12).png" alt="txtr12" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(13, 'textures')"><img src="img/textures (13).png" alt="txtr13" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(14, 'textures')"><img src="img/textures (14).png" alt="txtr14" style="width: 14vh ; height: 14vh;">
+          </div>
+          <div class="filterDiv texture" onclick="pickImageWithoutStyle(15, 'textures')"><img src="img/textures (15).png" alt="txtr15" style="width: 14vh ; height: 14vh;">
           </div>
           <div class="filterDiv circle" onclick="pickImageWithoutStyle(1, 'circle')"><img src="img/circle (1).png" alt="crcl1" style="width: 14vh ; height: 14vh;">
           </div>
@@ -178,29 +201,374 @@
             <div class="filterDiv obj7" onclick="removeObject(7)"><alt="obj7" style="width: 17vh ; height: 17vh;">
               <div class = "filterImage"><img src="img/removeObj.jpg" alt="" style="width: 17vh ; height: 17vh;"></div>
             </div>
-            <div class="filterDiv obj7" onclick="pickObj(7,1)">
+            <div class="filterDiv obj7" onclick="pickObj(7,1,true)">
               <div class = "filterImage"><img src="img/obj7 (1).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;left: -1vh;"></div>
+              <div id="styleMenu 7_1" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(7,1,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (1)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,1,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (2)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,1,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (3)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,1,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (4)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,1,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (5)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,1,6)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (6)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,1,7)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (7)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                  <div class="style" onclick="pickStyledObj(7,1,8)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (8)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,1,9)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (9)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,1,10)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (10)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,1,11)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (11)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,1,12)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (12)(1).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+              </div>
             </div>
-            <div class="filterDiv obj7" onclick="pickObj(7,2)">
+            <div class="filterDiv obj7" onclick="pickObj(7,2,true)">
               <div class = "filterImage"><img src="img/obj7 (2).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;left: -1vh;"></div>
+              <div id="styleMenu 7_2" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(7,2,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (1)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,2,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (2)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,2,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (3)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,2,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (4)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,2,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (5)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,2,6)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (6)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,2,7)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (7)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                  <div class="style" onclick="pickStyledObj(7,2,8)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (8)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,2,9)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (9)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,2,10)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (10)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,2,11)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (11)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,2,12)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (12)(2).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+              </div>
             </div>
-            <div class="filterDiv obj7" onclick="pickObj(7,3)">
+            <div class="filterDiv obj7" onclick="pickObj(7,3,true)">
               <div class = "filterImage"><img src="img/obj7 (3).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;left: -1vh;"></div>
+              <div id="styleMenu 7_3" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(7,3,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (1)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,3,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (2)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,3,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (3)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,3,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (4)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,3,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (5)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,3,6)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (6)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,3,7)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (7)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                  <div class="style" onclick="pickStyledObj(7,3,8)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (8)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,3,9)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (9)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,3,10)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (10)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,3,11)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (11)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,3,12)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (12)(3).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+              </div>
             </div>
-            <div class="filterDiv obj7" onclick="pickObj(7,4)">
+            <div class="filterDiv obj7" onclick="pickObj(7,4,true)">
               <div class = "filterImage"><img src="img/obj7 (4).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;left: -1vh;"></div>
+              <div id="styleMenu 7_4" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(7,4,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (1)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,4,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (2)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,4,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (3)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,4,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (4)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,4,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (5)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,4,6)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (6)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,4,7)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (7)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                  <div class="style" onclick="pickStyledObj(7,4,8)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (8)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,4,9)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (9)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,4,10)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (10)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,4,11)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (11)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,4,12)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (12)(4).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+              </div>
             </div>
-            <div class="filterDiv obj7" onclick="pickObj(7,5)">
+            <div class="filterDiv obj7" onclick="pickObj(7,5,true)">
               <div class = "filterImage"><img src="img/obj7 (5).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;left: -1vh;"></div>
+              <div id="styleMenu 7_5" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(7,5,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (1)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,5,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (2)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,5,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (3)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,5,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (4)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,5,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (5)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,5,6)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (6)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,5,7)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (7)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                  <div class="style" onclick="pickStyledObj(7,5,8)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (8)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,5,9)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (9)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,5,10)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (10)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,5,11)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (11)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,5,12)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (12)(5).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+              </div>
             </div>
-            <div class="filterDiv obj7" onclick="pickObj(7,6)">
+            <div class="filterDiv obj7" onclick="pickObj(7,6,true)">
               <div class = "filterImage"><img src="img/obj7 (6).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;left: -1vh;"></div>
+              <div id="styleMenu 7_6" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(7,6,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (1)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,6,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (2)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,6,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (3)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,6,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (4)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,6,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (5)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,6,6)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (6)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,6,7)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (7)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                  <div class="style" onclick="pickStyledObj(7,6,8)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (8)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,6,9)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (9)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,6,10)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (10)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,6,11)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (11)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,6,12)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (12)(6).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+              </div>
             </div>
-            <div class="filterDiv obj7" onclick="pickObj(7,7)">
+            <div class="filterDiv obj7" onclick="pickObj(7,7,true)">
               <div class = "filterImage"><img src="img/obj7 (7).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;left: -1vh;"></div>
+              <div id="styleMenu 7_7" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(7,7,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (1)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,7,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (2)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,7,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (3)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,7,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (4)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,7,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (5)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,7,6)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (6)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,7,7)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (7)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                  <div class="style" onclick="pickStyledObj(7,7,8)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (8)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,7,9)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (9)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,7,10)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (10)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,7,11)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (11)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,7,12)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (12)(7).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+              </div>
             </div>
-            <div class="filterDiv obj7" onclick="pickObj(7,8)">
+            <div class="filterDiv obj7" onclick="pickObj(7,8,true)">
               <div class = "filterImage"><img src="img/obj7 (8).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;left: -1vh;"></div>
+              <div id="styleMenu 7_8" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(7,8,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (1)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,8,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (2)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,8,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (3)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,8,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (4)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,8,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (5)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,8,6)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (6)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,8,7)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (7)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                  <div class="style" onclick="pickStyledObj(7,8,8)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (8)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,8,9)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (9)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,8,10)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (10)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,8,11)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (11)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,8,12)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (12)(8).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="filterDiv obj7" onclick="pickObj(7,9)">
+              <div class = "filterImage"><img src="img/obj7 (9).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;left: -1vh;"></div>
+              <div id="styleMenu 7_9" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(7,9,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (1)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,9,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (2)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,9,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (3)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,9,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (4)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,9,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (5)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,9,6)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (6)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,9,7)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (7)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                  <div class="style" onclick="pickStyledObj(7,9,8)">
+                    <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (8)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                    </div>
+                <div class="style" onclick="pickStyledObj(7,9,9)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (9)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,9,10)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (10)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,9,11)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (11)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(7,9,12)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj7 (12)(9).png" alt="" style="width: 17vh ; height: 17vh;left: -1vh;"></div>
+                  </div>
+              </div>
             </div>
             <div class="filterDiv obj8" onclick="removeObject(8)"><alt="obj8" style="width: 17vh ; height: 17vh;">
               <div class = "filterImage"><img src="img/removeObj.jpg" alt="" style="width: 17vh ; height: 17vh;"></div>
@@ -280,23 +648,123 @@
             <div class="filterDiv obj10" onclick="removeObject(10)"><alt="obj10" style="width: 17vh ; height: 17vh;">
               <div class = "filterImage"><img src="img/removeObj.jpg" alt="" style="width: 17vh ; height: 17vh;top: -4vh;"></div>
             </div>
-            <div class="filterDiv obj10" onclick="pickObj(10,1)">
+            <div class="filterDiv obj10" onclick="pickObj(10,1,true)">
               <div class = "filterImage"><img src="img/obj10 (1).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+              <div id="styleMenu 10_1" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(10,1,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (1)(1).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,1,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (2)(1).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,1,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (3)(1).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,1,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (4)(1).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,1,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (5)(1).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,1,6)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (6)(1).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
             </div>
+          </div>
             <div class="filterDiv obj10" onclick="pickObj(10,2)">
               <div class = "filterImage"><img src="img/obj10 (2).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
             </div>
-            <div class="filterDiv obj10" onclick="pickObj(10,3)">
+            <div class="filterDiv obj10" onclick="pickObj(10,3,true)">
               <div class = "filterImage"><img src="img/obj10 (3).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+              <div id="styleMenu 10_3" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(10,3,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (1)(3).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,3,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (2)(3).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,3,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (3)(3).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,3,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (4)(3).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,3,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (5)(3).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,3,6)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (6)(3).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
             </div>
-            <div class="filterDiv obj10" onclick="pickObj(10,4)">
+          </div>
+            <div class="filterDiv obj10" onclick="pickObj(10,4,true)">
               <div class = "filterImage"><img src="img/obj10 (4).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+              <div id="styleMenu 10_4" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(10,4,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (1)(4).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,4,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (2)(4).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,4,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (3)(4).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,4,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (4)(4).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,4,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (5)(4).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,4,6)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (6)(4).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
             </div>
-            <div class="filterDiv obj10" onclick="pickObj(10,5)">
+          </div>
+            <div class="filterDiv obj10" onclick="pickObj(10,5,true)">
               <div class = "filterImage"><img src="img/obj10 (5).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+              <div id="styleMenu 10_5" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(10,5,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (1)(5).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,5,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (2)(5).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,5,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (3)(5).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,5,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (4)(5).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,5,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (5)(5).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,5,6)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (6)(5).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
             </div>
+          </div>
             <div class="filterDiv obj10" onclick="pickObj(10,6)">
               <div class = "filterImage"><img src="img/obj10 (6).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+              <div id="styleMenu 10_6" class="dropdown-content">
+                <div class="style" onclick="pickStyledObj(10,6,1)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (1)(6).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,6,2)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (2)(6).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,6,3)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (3)(6).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,6,4)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (4)(6).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,6,5)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (5)(6).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+                <div class="style" onclick="pickStyledObj(10,6,6)">
+                  <div class = "filterImageLittleZoom"><img src="img/styles/obj10 (6)(6).png" alt="" style="width: 23vh;height: 23vh;top: -8vh;position: absolute;left: -6vh;"></div>
+                  </div>
+            </div>
             </div>
             <div class="filterDiv obj11" onclick="removeObject(11)"><alt="obj11" style="width: 17vh ; height: 17vh;">
               <div class = "filterImage"><img src="img/removeObj.jpg" alt="" style="width: 17vh ; height: 17vh;"></div>
@@ -322,7 +790,6 @@
                 <div class="style" onclick="pickStyledObj(11,1,6)">
                   <div class = "filterImageLittleZoom"><img src="img/styles/obj11 (6)(1).png" alt="" style="width: 17vh ; height: 17vh;"></div>
                   </div>
-
           </div>
             </div>
             <div class="filterDiv obj11" onclick="pickObj(11,2,true)">
@@ -640,7 +1107,7 @@
                   </div>
               </div>
             </div>
-            <div class="filterDiv obj12" onclick="pickObj(12,4,true)">
+            <div class="filterDiv obj12" onclick="pickObj(12,4)">
               <div class = "filterImageLittleZoom"><img src="img/obj12 (4).png" alt="" style="width: 21vh;height: 21vh;position: absolute;top: -5vh;left: -2vh;"></div>
               <!-- <div id="styleMenu 12_4" class="dropdown-content">
                 <div class="style" onclick="pickStyledObj(12,4,1)">
@@ -779,7 +1246,7 @@
                   <div class = "filterImageLittleZoom"><img src="img/styles/obj12 (5)(10).png" alt="" style="width: 21vh;height: 21vh;position: absolute;top: -5vh;left: -2vh;"></div>
                   </div>
               </div>
-            </div>
+
             <div class="filterDiv obj13" onclick="removeObject(13)"><alt="obj13" style="width: 13vh ; height: 13vh;">
               <div class = "filterImage"><img src="img/removeObj.jpg" alt="" style="width: 13vh ; height: 13vh;"></div>
             </div>
@@ -817,6 +1284,62 @@
               <div class = "filterImageLittleZoom"><img src="img/obj13 (11).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
             </div>
         </div>
+        <div class="filterDiv obj13" onclick="removeObject(13)"><alt="obj13" style="width: 13vh ; height: 13vh;">
+              <div class = "filterImage"><img src="img/removeObj.jpg" alt="" style="width: 13vh ; height: 13vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,1)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (1).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,2)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (2).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,3)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (3).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,4)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (4).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,5)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (5).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,6)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (6).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,7)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (7).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,8)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (8).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,9)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (9).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,10)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (10).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+            <div class="filterDiv obj13" onclick="pickObj(13,11)">
+              <div class = "filterImageLittleZoom"><img src="img/obj13 (11).png" alt="" style="width: 10vh;height: 10vh;position: absolute;left: 2vh;top: 2vh;"></div>
+            </div>
+        
+        <div class="filterDiv obj14" onclick="removeObject(14)"><alt="obj14" style="width: 13vh ; height: 13vh;">
+          <div class = "filterImage"><img src="img/removeObj.jpg" alt="" style="width: 13vh ; height: 13vh;"></div>
+        </div>
+        <div class="filterDiv obj14" onclick="pickObj(14,1)">
+          <div class = "filterImageLittleZoom"><img src="img/obj14 (1).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;top: -4vh;"></div>
+        </div>
+        <div class="filterDiv obj14" onclick="pickObj(14,2)">
+          <div class = "filterImageLittleZoom"><img src="img/obj14 (2).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;top: -4vh;"></div>
+        </div>
+        <div class="filterDiv obj14" onclick="pickObj(14,3)">
+          <div class = "filterImageLittleZoom"><img src="img/obj14 (3).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;top: -4vh;"></div>
+        </div>
+        <div class="filterDiv obj14" onclick="pickObj(14,4)">
+          <div class = "filterImageLittleZoom"><img src="img/obj14 (4).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;top: -4vh;"></div>
+        </div>
+        <div class="filterDiv obj14" onclick="pickObj(14,5)">
+          <div class = "filterImageLittleZoom"><img src="img/obj14 (5).png" alt="" style="width: 17vh ; height: 17vh;position: absolute;top: -4vh;"></div>
+        </div>
+      </div>
 
 
     <div class="resultBox" style="
@@ -834,7 +1357,7 @@
             position: absolute;
             background-size: 100% auto;">
             </div>
-            <div id="resultBox texture" style="
+            <div id="resultBox textures" style="
              height: 37.5vh;
             width: 37.5vh;
             position: absolute;
@@ -889,6 +1412,12 @@
             background-size: 100% auto;">
             </div>
             <div id="resultBox obj7" style="
+            height: 37.5vh;
+            width: 37.5vh;
+            position: absolute;
+            background-size: 100% auto;">
+            </div>
+            <div id="resultBox obj14" style="
             height: 37.5vh;
             width: 37.5vh;
             position: absolute;

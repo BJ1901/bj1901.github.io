@@ -192,19 +192,19 @@ transform: scale(1.3);
 {
   display: grid;
   display: none;
-    background-color: #ffffff;
-    width: 46.5vh;
-    height: 46.1vh;
-    top: 15vh;
-    left: 1vh;
-    overflow: hidden;
-    position: fixed;
-    background-image: url(img/styleBox.png);
-    background-size: contain;
-    justify-content: center;
-    grid-column-end: 3;
-    grid-template-columns: repeat(3, 15vh);
-    z-index: 1;
+  background-color: #ffffff;
+  width: 50.5vh;
+  height: 50.1vh;
+  top: 27vh;
+  left: 1vh;
+  overflow: auto;
+  position: fixed;
+  background-image: url(img/styleBox.png);
+  background-size: inherit;
+  justify-content: center;
+  grid-column-end: 3;
+  grid-template-columns: repeat(3, 15vh);
+  z-index: 1;
 }
 .style {
   float: left;
@@ -215,7 +215,7 @@ transform: scale(1.3);
   display: inline-block;
   overflow: hidden;
     text-align: auto;
-    margin: 2px;
+    margin: -1vh;
 }
   /* The "show" class is added to the filtered elements */
   .show {

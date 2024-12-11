@@ -5,6 +5,15 @@
 filterSelection("all")
 
 function filterSelection(c) {
+
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
+    }
+  }
   var x, i;
   x = document.getElementsByClassName("filterDiv");
   if (c == "all") c = "none";
@@ -119,14 +128,14 @@ function pickStyledObj(obj,index,style) {
 }
 window.onclick = function(event) {
 console.log(event.target.alt);         
-//   if (!event.target.matches('.container')) {
-if (event.target.alt == undefined) {
+  if (!event.target.matches('.window')) {
+// if (event.target.alt == undefined) {
 var dropdowns = document.getElementsByClassName("dropdown-content");
 var i;
 for (i = 0; i < dropdowns.length; i++) {
 var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('grid')) {
-openDropdown.classList.remove('grid');
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
 }
 }
 }
@@ -144,5 +153,5 @@ function removeObject(obj)
 
 function mint()
 {
-  
+
 }
