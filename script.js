@@ -210,11 +210,11 @@ function removeObject(obj)
 
 function start_game()
 {
-  let details = navigator.userAgent;
-  let regexp = /android|iphone|kindle|ipad/i;
-  let isMobile = regexp.test(details);
-
-  if (isMobile) {
+  // let details = navigator.userAgent;
+  // let regexp = /android|iphone|kindle|ipad/i;
+  // let isMobile = regexp.test(details);
+  if( 'ontouchstart' in window || navigator.maxTouchPoints > 0 ) {
+  // if (isMobile) {
     window.location.href = "mobilegame.html";
   } else {
     window.location.href = "game.html";
