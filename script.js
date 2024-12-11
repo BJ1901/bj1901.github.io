@@ -25,6 +25,43 @@ function filterSelection(c) {
 }
 
 
+function filterMobileSelection(c) {
+  var mobilemenu = document.getElementsByClassName("mobilemenu");
+  for (i = 0; i < mobilemenu.length; i++) {
+    mobilemenu[i].style.display = "block";
+  }
+  
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
+    }
+  }
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "none";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+
+function hideMobileMenu() {
+  var mobilemenu = document.getElementsByClassName("mobilemenu");
+  for (i = 0; i < mobilemenu.length; i++) {
+    mobilemenu[i].style.display = "none";
+  }
+}
+
+
+
+
+
+
 // function pickImage(indx) {
 //   var bgImageSrc = indx.querySelector('img').src;
 //   document.getElementById("resultBox bckgr").style.backgroundImage = `url(${bgImageSrc})`;
@@ -91,6 +128,7 @@ function pickImageWithoutStyle(index, boxType) {
 
   headingID.style.backgroundImage = `url('img/${boxType} (${index}).png')`;
   headingID.style.backgroundSize = "contain";
+  hideMobileMenu();
  }
 
 function pickObj(obj,index, hasMenu = false) {
@@ -103,6 +141,7 @@ if(hasMenu == false) {
   headingID = document.getElementById(`resultBox obj${obj}`);
 headingID.style.backgroundImage =  `url('img/obj${obj} (${index}).png')`;
 headingID.style.backgroundSize = "contain";
+hideMobileMenu();
 }
 else{
   const dropdowns = document.getElementById(`styleMenu ${obj}_${index}`);
@@ -125,31 +164,63 @@ function pickStyledObj(obj,index,style) {
           dropdown.classList.remove('show');
       }
   });
+  hideMobileMenu();
 }
-window.onclick = function(event) {
-console.log(event.target.alt);         
-  if (!event.target.matches('.window')) {
-// if (event.target.alt == undefined) {
-var dropdowns = document.getElementsByClassName("dropdown-content");
-var i;
-for (i = 0; i < dropdowns.length; i++) {
-var openDropdown = dropdowns[i];
-if (openDropdown.classList.contains('show')) {
-openDropdown.classList.remove('show');
-}
-}
-}
-else if(event.target )
-{
 
+function hideDropdowns() {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
 }
+document.addEventListener("click", function(event){
+  if (!event.target.closest(".dropdown-content")) {
+    hideDropdowns();
+  }
+});
+
+
+
+
+
+
+window.onclick = function(event) {
+  if (event.target.matches('.dropdown-content')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
 function removeObject(obj)
 {
   headingID = document.getElementById(`resultBox obj${obj}`);
   headingID.style.backgroundImage =  "";
   headingID.style.backgroundSize = "";
+  hideMobileMenu();
 }
+
+function start_game()
+{
+  let details = navigator.userAgent;
+  let regexp = /android|iphone|kindle|ipad/i;
+  let isMobile = regexp.test(details);
+
+  if (isMobile) {
+    window.location.href = "mobilegame.html";
+  } else {
+    window.location.href = "game.html";
+  }
+}
+
 
 function mint()
 {
